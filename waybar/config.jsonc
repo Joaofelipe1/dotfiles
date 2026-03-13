@@ -2,9 +2,9 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "custom/dolphin", "custom/music"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "tray"],
+    "modules-right": ["pulseaudio", "tray", "custom/power"],
 
     "hyprland/workspaces": {
         "format": "{id}"
@@ -20,5 +20,21 @@
     },
     "tray": {
         "spacing": 8
+    },
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "~/scripts/powermenu.sh",
+        "tooltip": false
+    },
+    "custom/dolphin": {
+        "format": "󰉋",
+        "on-click": "dolphin",
+        "interval": 0
+    },
+    "custom/music": {
+        "exec": "~/scripts/music.sh",
+        "interval": 2
     }
+
+    
 }
