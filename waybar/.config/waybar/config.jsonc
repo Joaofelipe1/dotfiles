@@ -4,7 +4,7 @@
     "height": 30,
     "modules-left": ["hyprland/workspaces", "custom/dolphin", "custom/music"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "tray", "custom/power"],
+    "modules-right": ["pulseaudio", "custom/power"],
 
     "hyprland/workspaces": {
         "format": "{id}"
@@ -18,12 +18,9 @@
         "format-icons": ["󰕿", "󰖀", "󰕾"],
         "on-click": "pavucontrol" 
     },
-    "tray": {
-        "spacing": 8
-    },
     "custom/power": {
         "format": "⏻",
-        "on-click": "~/scripts/powermenu.sh",
+        "on-click": "wlogout",
         "tooltip": false
     },
     "custom/dolphin": {

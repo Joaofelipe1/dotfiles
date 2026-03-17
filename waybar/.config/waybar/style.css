@@ -1,32 +1,26 @@
 @import "/home/felipe/.cache/wal/colors-waybar.css";
-
 * {
     font-family: "FiraCode Nerd Font";
-    font-size: 13px;
+    font-size: 14px;
 }
-
 window#waybar {
     background-color: shade(@background, 0.8);
     color: @foreground;
 }
-
 #workspaces button {
     padding: 0 8px;
     color: @color8;
 }
-
 #workspaces button.active {
     color: @foreground;
 }
-
-#clock, #cpu, #memory, #network, #pulseaudio, #tray {
-    padding: 0 10px;
+#clock, #pulseaudio {
+    padding: 0 20px;
     color: @foreground;
 }
-
 #custom-power {
     padding: 0 10px;
-    color: @color1;
+    color: @foreground;
     font-size: 16px;
 }
 #custom-dolphin {
@@ -38,5 +32,4 @@ window#waybar {
     padding: 0 10px;
     color: @color5;
 }
-
 
