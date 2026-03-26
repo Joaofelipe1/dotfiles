@@ -10,7 +10,7 @@ if [[ ! -d "$WALLPAPER_DIR" ]]; then
 fi
 
 #Checks if swww daemon it's running
-if ! pgrep -x "swww-daemon" >/dev/null; then
+if ! pgrep -x "awww-daemon" >/dev/null; then
   swww-daemon &
   sleep 1
 fi
@@ -28,7 +28,7 @@ while true; do
 
   #Iterates through wallpapers
   for WALL in "${WALLPAPERS[@]}"; do
-    swww img "$WALL" --transition-type fade --transition-duration 1
+    awww img "$WALL" --transition-type fade --transition-duration 1
     wal -i "$WALL" -n
     pkill -SIGUSR2 waybar
     sleep "$INTERVAL"
