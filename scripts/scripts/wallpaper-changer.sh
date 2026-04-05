@@ -30,7 +30,6 @@ while true; do
   for WALL in "${WALLPAPERS[@]}"; do
     awww img "$WALL" --transition-type fade --transition-duration 1
     wal -i "$WALL" -n
-    pkill -SIGUSR2 waybar
     sleep "$INTERVAL"
   done
 done

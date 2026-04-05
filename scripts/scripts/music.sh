@@ -1,7 +1,9 @@
 #!/bin/bash
 
-status=$(playerctl status 2>/dev/null)
+players=$(playerctl -l)
 
-if [ "$status" = "Playing" ]; then
-  playerctl metadata --format "{{artist}} - {{title}}"
-fi
+for player in $players; do
+
+  [ "$(playerctl --player=$player status 2>/dev/null)" != "Playing" ] && continue
+  playerctl metadata --player=$player --format "{{artist}} - {{title}}"
+done

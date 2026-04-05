@@ -1,2 +1,1 @@
-
-@theme "/usr/share/rofi/themes/sidebar.rasi"
+@theme "~/.config/rofi/themes/aditype-2-style-2.rasi"

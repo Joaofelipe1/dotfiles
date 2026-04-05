@@ -1,0 +1,6 @@
+* {
+    background:     #{background.strip};
+    background-alt: #{color0.strip};
+    foreground:     #{foreground.strip};
+    selected:       #{color2.strip};
+} 
